@@ -17,7 +17,6 @@ type UserData struct {
 	lastName        string
 	email           string
 	numberOfTickets uint
-	// isOptedForNewsletter bool
 }
 
 var wg = sync.WaitGroup{}
@@ -59,6 +58,7 @@ func main() {
 	}
 
 	wg.Wait()
+
 }
 
 func greetings() {
